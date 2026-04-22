@@ -27,9 +27,6 @@ Built securely on top of the user and authorization layers, DCS features a wide 
 Verheyden Tech integrates advanced LLM capabilities directly into the development and support lifecycle. 
 
 **Gerar** is our proprietary AI assistant powered by **Llama 3.1**, running entirely in-house on a dedicated, high-performance edge node:
-* **Hardware:** Ryzen 9, 64 GB RAM, 1 TB SSD
-* **Environment:** Ubuntu Headless LTS Server with a Dockerized PostgreSQL database
-* **Networking:** Secured globally via Tailscale VPN
 * **Roadmap:** Gerar is actively being integrated into the DCS ecosystem as a Level 1 Support agent, with Phase 2 expanding its capabilities to autonomous Level 2 Support and a dedicated Verheyden Tech coding agent.
 
 ---
