@@ -18,7 +18,7 @@ The foundation of the DCS ecosystem is built on atomic, independent modules that
 ### 🧩 Feature Modules
 Built securely on top of the user and authorization layers, DCS features a wide array of specialized business modules. Every module is a self-contained powerhouse:
 
-`DCS.Billing` | `DCS.Contact` | `DCS.Diary` | `DCS.Document` | `DCS.ERP` | `DCS.Flow` | `DCS.Health` | `DCS.HR` | `DCS.Mailing` | `DCS.Scheduler` | `DCS.Shop` | `DCS.VisPre` (3D Visualization)
+`DCS.Billing` | `DCS.Contact` | `DCS.Diary` | `DCS.Document` | `DCS.ERP` | `DCS.Flow` | `DCS.Health` | `DCS.HR` | `DCS.Mailing` | `DCS.Scheduler` | `DCS.Shop` | `DCS.VisPre` (3D Visualization) | so far, to be continued..
 
 ---
 
