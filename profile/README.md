@@ -38,7 +38,7 @@ Verheyden Tech integrates advanced LLM capabilities directly into the developmen
 
 At Verheyden Tech, quality code is predictable code. We adhere to rigid development conventions to ensure a pristine, scalable codebase:
 
-1.  **Self-Documenting Logic:** Inline comments are strictly prohibited. The code's intent must be perfectly clear through its structure and naming.
+1.  **Self-Documenting Logic:** Inline comments are strictly prohibited. The code's intent must be perfectly clear through its structure, documentation and naming.
 2.  **Comprehensive XML Documentation:** Every public class, method, and property is meticulously documented using `/// <summary>` tags in professional English.
 3.  **Strict Namespace Conventions:** Namespaces map structurally, not geographically. We strictly follow the `namespace DCS.[ModuleName].[Layer]` pattern (e.g., `DCS.Billing.Data` or `DCS.User.UI`). Directory structures do not pollute namespaces, with the sole exception of Enums. `using` directives are always placed outside the namespace block.
 
