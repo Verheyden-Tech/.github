@@ -1,26 +1,47 @@
-# Data Control System
+# 🚀 Welcome to Verheyden Tech
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+We build scalable, highly modular, and AI-assisted software ecosystems. Verheyden Tech is an independent software development company specializing in robust enterprise solutions, strictly layered architectures, and intelligent system integrations.
 
-`Verheyden-Tech` presents **DCS**, a modular and dynamic framework designed to centralize and simplify your daily business operations. By integrating with various resources like email clients and project management tools (e.g., ClickUp), DCS streamlines your workflows, helping to centralize and simplify everyday processes.
+## ⚙️ The Data Control System (DCS)
 
-## The DCS Framework
+Our flagship project is **DCS**, a massive, multi-platform enterprise suite. It relies on a strictly hierarchical dependency structure to ensure absolute maintainability, clear domain separation, and high performance across both Desktop (`DCS.Framework`) and Mobile (`DCS.Mobile`) environments.
 
-The framework is composed of several modules to cover a wide range of business needs.
+### 🏗️ Core Architecture
+The foundation of the DCS ecosystem is built on atomic, independent modules that cascade into higher-level services. Dependency flows strictly upwards:
 
-### Fundamental Modules
-These are the core components that form the foundation of the DCS framework:
-- `DCS.User`
-- `DCS.Authentication`
-- `DCS.CoreLib`
-- `DCS.Log`
-- `DCS.Data`
+* **`DCS.Core`**: The root of the system (Logging, Translations, Resources, IconService). No external dependencies.
+* **`DCS.Data`**: The centralized data access layer handling all SQL operations and Server API communications. No external dependencies.
+* **`DCS.CoreLib`**: Foundational base classes *(depends on `DCS.Core` & `DCS.Data`)*.
+* **`DCS.Authorisation`**: Domain and authorization logic *(depends on `DCS.CoreLib`)*.
+* **`DCS.User`**: User management systems *(depends on `DCS.Authorisation`)*.
 
-### Functional Modules
-These modules provide specific business functionalities to extend the framework's capabilities:
-- `DCS.Contact`
-- `DCS.ERP`
-- `DCS.HR`
-- `DCS.Billing`
-- `DCS.Mailing`
-- `DCS.Document`
+### 🧩 Feature Modules
+Built securely on top of the user and authorization layers, DCS features a wide array of specialized business modules. Every module is a self-contained powerhouse:
+
+`DCS.Billing` | `DCS.Contact` | `DCS.Diary` | `DCS.Document` | `DCS.ERP` | `DCS.Flow` | `DCS.Health` | `DCS.HR` | `DCS.Mailing` | `DCS.Scheduler` | `DCS.Shop` | `DCS.VisPre` (3D Visualization)
+
+---
+
+## 🧠 Project "Gerar": AI-Driven Infrastructure
+
+Verheyden Tech integrates advanced LLM capabilities directly into the development and support lifecycle. 
+
+**Gerar** is our proprietary AI assistant powered by **Llama 3.1**, running entirely in-house on a dedicated, high-performance edge node:
+* **Hardware:** Ryzen 9, 64 GB RAM, 1 TB SSD
+* **Environment:** Ubuntu Headless LTS Server with a Dockerized PostgreSQL database
+* **Networking:** Secured globally via Tailscale VPN
+* **Roadmap:** Gerar is actively being integrated into the DCS ecosystem as a Level 1 Support agent, with Phase 2 expanding its capabilities to autonomous Level 2 Support and a dedicated Verheyden Tech coding agent.
+
+---
+
+## 📜 Engineering Philosophy
+
+At Verheyden Tech, quality code is predictable code. We adhere to rigid development conventions to ensure a pristine, scalable codebase:
+
+1.  **Self-Documenting Logic:** Inline comments are strictly prohibited. The code's intent must be perfectly clear through its structure and naming.
+2.  **Comprehensive XML Documentation:** Every public class, method, and property is meticulously documented using `/// <summary>` tags in professional English.
+3.  **Strict Namespace Conventions:** Namespaces map structurally, not geographically. We strictly follow the `namespace DCS.[ModuleName].[Layer]` pattern (e.g., `DCS.Billing.Data` or `DCS.User.UI`). Directory structures do not pollute namespaces, with the sole exception of Enums. `using` directives are always placed outside the namespace block.
+
+<br/>
+
+*Driven by logic. Built for scale. Shaping simplicity.*
