@@ -2,7 +2,7 @@
 
 ![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)
 ![Architecture: Micro-Modular](https://img.shields.io/badge/Architecture-Micro--Modular-blue.svg)
-![AI Powered: Gerar (Llama 3.1)](https://img.shields.io/badge/AI_Powered-Gerar_(Llama_3.1)-purple.svg)
+![AI Powered: Gerar](https://img.shields.io/badge/AI_Powered-Gerar-purple.svg)
 ![Infrastructure: Secure & Scalable](https://img.shields.io/badge/Infrastructure-Secure_%26_Scalable-success.svg)
 
 We build scalable, highly modular, and AI-assisted software ecosystems. Verheyden Tech is an independent software development company specializing in robust enterprise solutions, strictly layered architectures, and intelligent system integrations.
