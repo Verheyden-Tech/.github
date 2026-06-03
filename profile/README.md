@@ -1,64 +1,121 @@
-# 🚀 Welcome to Verheyden Tech
+<div align="center">
 
-![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)
-![Architecture: Micro-Modular](https://img.shields.io/badge/Architecture-Micro--Modular-blue.svg)
-![AI Powered: Gerar (VT-Proprietary)](https://img.shields.io/badge/AI_Powered-Gerar_VT-purple.svg)
-![Infrastructure: Secure & Scalable](https://img.shields.io/badge/Infrastructure-Secure_%26_Scalable-success.svg)
+# 🏛️ Verheyden Tech
 
-We build scalable, highly modular, and AI-assisted software ecosystems. Verheyden Tech is an independent software development company specializing in robust enterprise solutions, strictly layered architectures, and intelligent system integrations.
+> **Independent software engineering — enterprise architecture, AI integration, and absolute data sovereignty.**
 
-## ⚙️ The Data Control System (DCS)
+[![License: VT Proprietary](https://img.shields.io/badge/License-VT_Proprietary-800020.svg)](https://github.com/Verheyden-Tech/.github/blob/main/VT_LICENSE.md)
+![Architecture: Micro-Modular](https://img.shields.io/badge/Architecture-Micro--Modular-1A1A1A.svg)
+![AI: Gerar VT-Proprietary](https://img.shields.io/badge/AI-Gerar_VT--Proprietary-B8860B.svg)
+![Infrastructure: Secure & Local](https://img.shields.io/badge/Infrastructure-Secure_%26_Local-800020.svg)
 
-Our flagship project is **DCS**, a massive, multi-platform enterprise suite. It relies on a strictly hierarchical dependency structure to ensure absolute maintainability, clear domain separation, and high performance across both Desktop (`DCS.Framework`) and Mobile (`DCS.Mobile`) environments.
-
-### 🏗️ Core Architecture
-The foundation of the DCS ecosystem is built on atomic, independent modules that cascade into higher-level services. Dependency flows strictly upwards:
-
-* **`DCS.Core`**: The root of the system (Logging, Translations, Resources, IconService). No external dependencies.
-* **`DCS.Data`**: The centralized data access layer handling all SQL operations and Server API communications. No external dependencies.
-* **`DCS.CoreLib`**: Foundational base classes *(depends on `DCS.Core` & `DCS.Data`)*.
-* **`DCS.Authorisation`**: Domain and authorization logic *(depends on `DCS.CoreLib`)*.
-* **`DCS.User`**: User management systems *(depends on `DCS.Authorisation`)*.
-
-### 🧩 Feature Modules
-Built securely on top of the user and authorization layers, DCS features a wide array of specialized business modules. Every module is a self-contained powerhouse:
-
-`DCS.Billing` | `DCS.Contact` | `DCS.Diary` | `DCS.Document` | `DCS.ERP` | `DCS.Flow` | `DCS.Health` | `DCS.HR` | `DCS.Mailing` | `DCS.Scheduler` | `DCS.Shop` | `DCS.VisPre` (3D Visualization) | *...and expanding.*
+</div>
 
 ---
 
-## 🧠 Project "Gerar" & Intelligent Ecosystem
+## 🎯 Who We Are
 
-Verheyden Tech integrates advanced LLM capabilities directly into the development, support, and operational lifecycle. 
+Verheyden Tech is an independent software development company specialising in robust enterprise solutions, strictly layered architectures, and intelligent system integrations. Every component we ship is predictable, auditable, and built for long-term operational scale.
 
-**Gerar** is our proprietary AI assistant powered by a locally hosted **Llama 3.1** model, ensuring absolute data sovereignty and security. Rather than functioning as a disconnected tool, Gerar is deeply embedded into the Verheyden Tech infrastructure.
+---
 
-### 🚀 Capabilities & Synergies
-The true power of our ecosystem lies in the combination of DCS's rigid, scalable architecture and Gerar's intelligent reasoning:
+## ⚙️ The Data Control System (DCS)
 
-* **Automated Support Operations:** Gerar is actively being integrated as a context-aware 1st-Level Support agent for the entire DCS ecosystem. The roadmap for Phase 2 includes autonomous 2nd-Level Support, enabling Gerar to actively analyze, debug, and resolve domain-specific issues across all DCS modules.
-* **Proprietary Coding Agent:** Gerar is specifically aligned with Verheyden Tech's strict engineering philosophy. It acts as an autonomous development partner that understands our architectural boundaries, enforces our zero-inline-comment policy, and generates perfectly structured XML documentation.
-* **Intelligent Data Orchestration:** As the DCS feature set expands, Gerar is designed to intelligently comprehend and query data flows between these highly isolated modules, providing deep insights without compromising the strict architectural layers.
-* **Secure & Resilient Infrastructure:** The backbone of our ecosystem relies on a highly optimized, scalable server architecture. We utilize headless Linux environments, fully containerized data layers (Dockerized PostgreSQL), and a zero-trust network architecture (Tailscale VPN) to guarantee maximum security, minimal overhead, and seamless remote orchestration.
+Our flagship product is **DCS** — a multi-platform enterprise suite delivering desktop (`DCS.Framework`) and mobile (`DCS.Mobile`) experiences from a single, rigorously layered codebase.
+
+### 🏗️ Architecture
+
+Dependencies flow strictly downward. No module may reference a peer or upstream layer.
+
+```text
+Layer 0/1  DCS.Data.Shared ──► DCS.Data  ◄── DCS.Core
+Layer 2    DCS.CoreLib
+Layer 3    DCS.Authorisation
+Layer 4    DCS.User
+Layer 5    Feature Modules (Tier 1–4)
+Layer 6    DCS.Framework (WPF)  ·  DCS.Mobile (MAUI)
+```
+
+### 🧩 Feature Modules
+
+Every module is a self-contained solution following the canonical four-assembly split (Core / Data / Service / UI):
+
+`DCS.Billing` · `DCS.Contact` · `DCS.Diary` · `DCS.Document` · `DCS.ERP` · `DCS.Fleet` · `DCS.Flow` · `DCS.Gastro` · `DCS.Health` · `DCS.HR` · `DCS.Mailing` · `DCS.Scheduler` · `DCS.Shop` · `DCS.VisPre`
+
+---
+
+## 🧠 Gerar AI
+
+**Gerar** is the proprietary AI core of Verheyden Tech — a fully local, production-grade AI assistant running on a self-hosted Ollama inference stack.
+
+### Architecture
+
+```text
+VT.Gerar.UX  (WPF chat client)
+     │
+Gerar Bridge  (FastAPI · localhost:8765)
+     │
+Ollama  (Qwen3:14B Q6_K · localhost:11434)
+     │
+Hardware: Ryzen 7 5700X · RX 6800 XT · 32 GB RAM
+```
+
+### Capabilities
+
+**Coding Agent** — Gerar operates as an autonomous development partner with full access to the DCS codebase. It enforces VT architectural conventions, generates XML-documented C# across all layers, executes `.NET` builds, manages Git, and iterates on compile errors without human intervention.
+
+**First & Second Level Support** — Gerar is the context-aware support agent for all DCS modules. It queries live production data (`dcs_main` PostgreSQL), resolves issues, and escalates with full technical context.
+
+**Threat Intelligence Unit (TIU)** — Gerar serves as the forensic investigator of the Verheyden Tech TIU. It conducts geolocation and ASN analysis, DNS/WHOIS/TLS reconnaissance, log analysis for attack patterns, and produces court-ready forensic reports with a verifiable hash-linked chain of custody.
+
+**Self-Improvement** — Gerar can propose, review, and apply changes to its own codebase through a gated `propose → approve → apply` workflow. No silent self-modification.
+
+### Data Sovereignty
+
+- Runs exclusively on local hardware — no cloud, no telemetry
+- Ollama bound to `127.0.0.1` — no LAN exposure by default
+- All chat history, file access, and model outputs remain on the host machine
+- Web search is an explicit opt-in tool, not a background process
+- Vector memory (`nomic-embed-text`) is stored locally with a hard 2 000-entry limit and automatic consolidation
+
+### Ecosystem
+
+| Repository | Description |
+|---|---|
+| [`Gerar-AI`](https://github.com/Verheyden-Tech/Gerar-AI) | Bridge, tools, memory, system prompt, voice listener |
+| [`VT.Gerar.UX`](https://github.com/Verheyden-Tech/VT.Gerar.UX) | WPF chat client with session management, output modes, TTS |
+| [`VT.Gerar.Installer`](https://github.com/Verheyden-Tech/VT.Gerar.Installer) | Visual setup wizard — hardware detection, model selection, three installation modes |
 
 ---
 
 ## 📜 Engineering Philosophy
 
-At Verheyden Tech, quality code is predictable code. We adhere to rigid development conventions to ensure a pristine, scalable codebase:
+Quality code is predictable code. Verheyden Tech adheres to rigid development conventions across every repository.
 
-1. **Self-Documenting Logic:** Inline comments are strictly prohibited. The code's intent must be perfectly clear through its structure, naming, and architectural placement.
-2. **Comprehensive XML Documentation:** Every public class, method, and property is meticulously documented using `/// <summary>` tags in professional English.
-3. **Strict Namespace Conventions:** Namespaces map structurally, not geographically. We strictly follow the `namespace DCS.[ModuleName].[Layer]` pattern (e.g., `DCS.Billing.Data` or `DCS.User.UI`). Directory structures do not pollute namespaces, with the sole exception of Enums. `using` directives are always placed outside the namespace block.
+**Self-documenting logic** — inline comments are prohibited. Intent is expressed through structure, naming, and architectural placement.
+
+**Comprehensive XML documentation** — every public class, method, and property carries a `/// <summary>` in professional English.
+
+**Strict namespace conventions** — namespaces follow `DCS.[ModuleName].[Layer]` (e.g., `DCS.Billing.Data`, `DCS.User.UI`). Directory structures do not pollute namespaces, with the sole exception of Enums. `using` directives are always placed outside the namespace block.
+
+**Proprietary primitives** — DI resolution, base classes, commands, and result types are all VT-owned. No third-party DI frameworks, no community MVVM toolkits.
+
+**Zero-warning builds** — every assembly ships clean. Warnings are treated as build defects.
 
 ---
 
 ## ⚖️ License & Intellectual Property
 
-All software, codebases, AI system prompts, and architectural designs under the Verheyden Tech organization are proprietary and strictly protected. 
+All software, codebases, AI configurations, system prompts, and architectural designs under the Verheyden Tech organisation are proprietary and strictly protected.
 
-Use, modification, or distribution of this ecosystem is strictly prohibited without explicit, written consent and a valid license agreement. Please refer to the [VT_LICENSE](VT_LICENSE) file in the `.github` repository for the complete legal EULA, including specific restrictions regarding AI exploitation and model scraping.
+Use, modification, or distribution without explicit written consent and a valid license agreement is prohibited. See [`VT_LICENSE.md`](https://github.com/Verheyden-Tech/.github/blob/main/VT_LICENSE.md) for the complete EULA, including restrictions on AI exploitation and model scraping.
 
-<br/>
+---
 
-*Driven by logic. Built for scale. Shaping simplicity.*
+<div align="center">
+
+*Driven by logic. Built for scale. Owned end to end.*
+
+© 2026 Verheyden Tech
+
+</div>
