@@ -1,6 +1,6 @@
 <div align="center">
 
-# VERHEYDEN TECH
+# 🏛️ VERHEYDEN TECH
 
 ### Independent Software Engineering
 
@@ -14,7 +14,7 @@
 
 ---
 
-## Who We Are
+## 🎯 Who We Are
 
 **Verheyden Tech** is an independent German software engineering company developing modular business applications, intelligent assistance systems, and sovereign infrastructure solutions.
 
@@ -28,7 +28,7 @@ Our ambition is to create professional software that remains understandable, mai
 
 ---
 
-## Our Technology Ecosystem
+## ⚙️ Our Technology Ecosystem
 
 Our products are designed to complement each other while maintaining clear architectural responsibilities.
 
@@ -41,7 +41,7 @@ Our products are designed to complement each other while maintaining clear archi
 
 Together, these systems form the foundation of the Verheyden Tech technology ecosystem.
 
-### Ásgarðr — Your Digital Workspace
+### 🏛️ Ásgarðr — Your Digital Workspace
 
 **One workspace. Your information. Your control.**
 
@@ -66,7 +66,7 @@ Local data storage, modular deployment, and controlled system integration are fu
 
 **Current direction:** Ásgarðr is undergoing further integration, hardening, and end-to-end validation. Its future architecture is designed to support centrally managed office environments through Herold-OS while preserving practical offline workflows.
 
-### Gerar Mjǫllnir — Intelligence in Service of People
+### 🧠 Gerar Mjǫllnir — Intelligence in Service of People
 
 **Intelligence with purpose. Assistance with responsibility.**
 
@@ -94,7 +94,7 @@ The long-term objective is an assistant capable of supporting an entire organiza
 
 **Current direction:** Local inference, voice interaction, and application integration are under active development and validation. Advanced autonomous and cross-system capabilities remain subject to further engineering and security review.
 
-### Herold-OS — Sovereign Infrastructure
+### 🛡️ Herold-OS — Sovereign Infrastructure
 
 **The foundation of a self-controlled digital environment.**
 
@@ -122,7 +122,7 @@ The platform aims to support offices and professional organizations operating th
 
 **Current direction:** Core installation, security, licensing, and service-stack functionality have reached laboratory validation milestones. Hardware validation, administration interfaces, recovery workflows, and production readiness remain ongoing development activities.
 
-### VTOC — Verheyden Tech Operations Center
+### 🖥️ VTOC — Verheyden Tech Operations Center
 
 **One operational perspective across the VT ecosystem.**
 
@@ -149,37 +149,37 @@ Remote maintenance is intended to require explicit authorization, with restricte
 
 ---
 
-## Our Architecture Philosophy
+## 🧭 Our Architecture Philosophy
 
 Technology is trustworthy when its boundaries, responsibilities, and behavior can be understood.
 
 Our engineering follows five principles.
 
-### 01 — Data Sovereignty
+### 🔐 01 — Data Sovereignty
 
 Users and organizations should retain meaningful control over where their information is stored, how it is processed, and which systems can access it.
 
 Local operation and independently controlled infrastructure are preferred wherever practical.
 
-### 02 — Security by Design
+### 🛡️ 02 — Security by Design
 
 Security is not a feature added after implementation.
 
 Authentication, authorization, encryption, service isolation, and controlled access are architectural concerns from the beginning.
 
-### 03 — Modular Independence
+### 🧩 03 — Modular Independence
 
 Systems should consist of clearly defined components with explicit responsibilities and controlled dependencies.
 
 Shared functionality belongs in reusable foundations rather than duplicated implementations.
 
-### 04 — Human Authority
+### 🤝 04 — Human Authority
 
 Automation and artificial intelligence should improve human capabilities without silently taking over consequential decisions.
 
 Authorization, transparency, and accountability remain essential.
 
-### 05 — Long-Term Maintainability
+### 🔧 05 — Long-Term Maintainability
 
 Readable code, predictable behavior, explicit contracts, and repeatable validation are more valuable than unnecessary complexity.
 
@@ -187,7 +187,7 @@ Software should remain maintainable as its ecosystem evolves.
 
 ---
 
-## Engineering & Technology
+## 🛠️ Engineering & Technology
 
 Our technology choices are driven by architectural suitability rather than trends.
 
@@ -208,7 +208,7 @@ Our technology choices are driven by architectural suitability rather than trend
 
 Specific implementations may differ between products and deployment environments.
 
-### Code Quality Standards
+### 📐 Code Quality Standards
 
 Our internal engineering conventions emphasize:
 
@@ -226,11 +226,11 @@ Our internal engineering conventions emphasize:
 
 ---
 
-## Our Development Roadmap
+## 🗺️ Our Development Roadmap
 
 The Verheyden Tech ecosystem is being developed incrementally.
 
-### Current Priorities
+### 🚀 Current Priorities
 
 **Ásgarðr**
 - Stabilize application integration and voice-assisted workflows
@@ -257,7 +257,7 @@ The Verheyden Tech ecosystem is being developed incrementally.
 - Integrate licensing and software package administration
 - Establish auditable remote diagnostics and maintenance
 
-### Long-Term Vision
+### 🌐 Long-Term Vision
 
 Our objective is a connected but independently controlled software environment in which:
 
@@ -272,7 +272,7 @@ The goal is not to eliminate every external dependency, but to ensure that criti
 
 ---
 
-## Development & Availability
+## 📦 Development & Availability
 
 Verheyden Tech maintains both active development projects and experimental technology initiatives.
 
@@ -286,7 +286,7 @@ Most internal repositories are private because they contain proprietary software
 
 ---
 
-## Licensing & Intellectual Property
+## ⚖️ Licensing & Intellectual Property
 
 Unless explicitly stated otherwise in an individual repository or accompanying license, Verheyden Tech software is proprietary.
 
@@ -298,7 +298,7 @@ Third-party software and dependencies remain subject to their respective license
 
 ---
 
-## Connect With Us
+## 📬 Connect With Us
 
 **Verheyden Tech — Independent Software Engineering**
 
