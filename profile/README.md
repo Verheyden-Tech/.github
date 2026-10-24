@@ -35,7 +35,7 @@ Our products are designed to complement each other while maintaining clear archi
 | Product | Purpose |
 |---|---|
 | **Ásgarðr** | Modular desktop workspace and business management |
-| **Gerar Mjǫllnir** | Intelligent, locally operated assistance |
+| **Gerar AI** | Intelligent, locally operated assistance |
 | **Herold-OS** | Sovereign server infrastructure and central services |
 | **VTOC** | Operations, licensing, monitoring, and customer support |
 
@@ -66,11 +66,11 @@ Local data storage, modular deployment, and controlled system integration are fu
 
 **Current direction:** Ásgarðr is undergoing further integration, hardening, and end-to-end validation. Its future architecture is designed to support centrally managed office environments through Herold-OS while preserving practical offline workflows.
 
-### 🧠 Gerar Mjǫllnir — Intelligence in Service of People
+### 🧠 Gerar AI — Intelligence in Service of People
 
 **Intelligence with purpose. Assistance with responsibility.**
 
-Gerar Mjǫllnir is Verheyden Tech's intelligent assistant and digital representative.
+Gerar AI is Verheyden Tech's intelligent assistant and digital representative.
 
 Inspired by Norse mythology, Gerar embodies knowledge, reliability, discretion, and the responsible use of technological power.
 
